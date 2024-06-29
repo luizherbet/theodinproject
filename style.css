@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+
+.flex-container,
+.item {
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.flex-container {
+  margin: 0 auto;
+  display: flex;
+  background-color: lightcoral;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 800px;
+  width: 800px;
+}
+
+.flex-container:active {
+  flex-direction: column;
+}
+
+.flex-container :nth-child(odd) {
+  background-color: lightgreen;
+}
+
+.flex-container:active :nth-child(even) {
+  background-color: lightslategrey;
+}
+
+.item {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: lightseagreen;
+  flex: 1 1 0;
+}
+
+.item:hover {
+  background-color: lightskyblue;
+  flex: 5 0 0;
+}
